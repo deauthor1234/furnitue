@@ -1299,6 +1299,14 @@ video {
   line-height: 4.5rem;
 }
 
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
 .tracking-\[0\.1rem\]{
   letter-spacing: 0.1rem;
 }
