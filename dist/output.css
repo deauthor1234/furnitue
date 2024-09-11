@@ -3108,6 +3108,16 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 970px){
+  .max-\[970px\]\:hidden{
+    display: none;
+  }
+
+  .max-\[970px\]\:justify-center{
+    justify-content: center;
+  }
+}
+
 
 
 
