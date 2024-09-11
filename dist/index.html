@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Furniture Website">
+    <title>Furnitue - Home Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- link to icons -->
+    <link rel="stylesheet" href="output.css"> <!-- link to CSS -->
+</head>
+<body class="font-Poppins text-base text-primary-200">
+    <div class="bg-primary-200 text-neutral-300 flex justify-center py-2 text-[0.9rem]"> <!-- top section -->
+        <div class="section_content max-xl:max-w-full max-xl:px-8 flex items-center justify-between">
+            <div class="text-xl flex items-center gap-2 max-lg:hidden">
+                <a href=""><i class="bx bxl-whatsapp hover:text-neutral-100 cursor-pointer"></i></a>
+                <a href=""><i class="bx bxl-instagram hover:text-neutral-100 cursor-pointer"></i></a>
+                <a href=""><i class="bx bxl-youtube hover:text-neutral-100 cursor-pointer"></i></a>
+                <a href=""><i class="bx bxl-facebook hover:text-neutral-100 cursor-pointer"></i></a>
+                <a href=""><i class="bx bxl-tiktok hover:text-neutral-100 cursor-pointer"></i></a>
+            </div>
+            <div class="flex gap-4">
+                <p class="hover:text-neutral-100 cursor-pointer">Track Your Order</p>
+                <div class="bg-neutral-300 w-[2px] max-h-[20px]"></div>
+                <p>info@trackyourorder.com</p>
+            </div>
+            <div class="flex items-center gap-4 relative">
+                <div class="dropdown_overlay closed"></div>
+                <div class="dropdown">
+                    <div class="select">
+                        <p id="language" class="selected">English</p><i class="caret bx bxs-chevron-right"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="active">
+                            English
+                        </li>
+                        <li>
+                            Español
+                        </li>
+                        <li>
+                            Franćias
+                        </li>
+                        <li>
+                            Philipino
+                        </li>
+                        <li>
+                            Deutsch
+                        </li>
+                        <li>
+                            Portuģuês
+                        </li>
+                        <li>
+                            Nederlands
+                        </li>
+                        <div class="bx bx-caret-up"></div>
+                    </ul>
+                </div>
+                <div class="bg-neutral-300 w-[2px] h-[20px]"></div>
+                <div class="dropdown">
+                    <div class="select">
+                        <p id="currency" class="selected">USD</p><i class="caret bx bxs-chevron-right"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="active">
+                            USD
+                        </li>
+                        <li>
+                            EUR
+                        </li>
+                        <li>
+                            GBP
+                        </li>
+                        <li>
+                            NGN
+                        </li>
+                        <li>
+                            JPY
+                        </li>
+                        <li>
+                            CHF
+                        </li>
+                        <li>
+                            INR
+                        </li>
+                        <div class="bx bx-caret-up"></div>
+                    </ul>
+                </div>
+                <div class="bg-neutral-300 w-[2px] h-[20px]"></div>
+                <p class="flex items-center gap-3">
+                    <i class="bx bx-user-circle text-[1.3rem] text-neutral-300"></i> 
+                    <span class="hover:text-neutral-100 cursor-pointer">Login</span>/<span class="hover:text-neutral-100 cursor-pointer">Register</span>
+                </p>
+            </div>
+        </div>
+    </div> 
+    
+    <header class="flex justify-center relative bg-secondary-100 mb-28 overflow-hidden"> <!-- hero section -->
+        <div class="section_content max-xl:max-w-full max-xl:px-8">
+            <nav id="nav" class="w-full flex justify-center relative">
+                <div class="navbar w-full z-[1] py-8 flex items-start justify-between">
+                    <p class="text-primary-200 text-[1.35rem] font-extrabold tracking-[0.1rem]">Furnitue</p>
+                    <div class="side_navbar_overlay"></div>
+                    <ul class="side_navbar">
+                        <div class="hidden max-lg:flex justify-between py-2 px-3 items-center">
+                            <i class="bx bx-search text-xl cursor-pointer"></i>
+                            <input class="bg-white w-full ml-3 mr-2 px-3 py-1 border border-primary-100 rounded-sm" type="text" placeholder="Search...">
+                            <i id="menuCloseBtn" class="bx bx-plus text-3xl rotate-45 cursor-pointer"></i>
+                        </div>
+                        <li class="nav_link active group">
+                            <a>HOME</a>
+                        </li>
+                        <li class="nav_link group">
+                            <a>ABOUT</a>
+                        </li>
+                        <li class="nav_link group">
+                            <a>SHOP</a>
+                        </li>
+                        <li class="nav_link group">
+                            <a>FAQ</a>
+                        </li>
+                        <li class="nav_link group">
+                            <a>BLOG</a>
+                        </li>
+                        <li class="nav_link group">
+                            <a>CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="text-[1.4rem] text-black flex gap-6">
+                        <i class="bx bx-search-alt hover:text-primary-100 cursor-pointer"></i>
+                        <div class="wishlist_icon">
+                            <i class="bx bx-heart"></i>
+                            <span>3</span>
+                        </div>
+                        <div class="cart_icon">
+                            <i class="bx bx-cart-alt"></i>
+                            <span>2</span>
+                        </div>
+                        <i id="menuIcon" class="bx bx-menu hover:text-primary-100 cursor-pointer hidden max-lg:block text-[1.6rem]"></i>
+                    </div>
+                </div>
+                <div class="side_bar_overlay"></div>
+                <div class="shopping_cart">
+                    <div class="cart_nav">
+                        <div class="content">
+                            <p class="heading">Shopping Cart</p>
+                            <div class="close_icon">
+                                <i class="bx bx-plus"></i>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="cart_items">
+                        <div class="cart_item">
+                            <div class="image">
+                                <img src="assets/images/premium products/product3.png" alt="">
+                            </div>
+                            <div class="details">
+                                <p class="title">Shelf Stand</p>
+                                <p class="total_price"><i class="currency_type"><i class="currency"></i></i> 175.02</p>
+                                <div class="quantity">
+                                    <span class="minus">-</span>
+                                    <span>1</span>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_item">
+                            <div class="image">
+                                <img src="assets/images/premium products/product1.png" alt="">
+                            </div>
+                            <div class="details">
+                                <p class="title">Fold Screen</p>
+                                <p class="total_price"><i class="currency_type"><i class="currency"></i></i> 199.30</p>
+                                <div class="quantity">
+                                    <span class="minus">-</span>
+                                    <span>1</span>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check_out_btn"><span>Check Out <i class="bx bx-right-arrow-alt"></i></span></div>
+                </div>
+                <div class="wishlist">
+                    <div class="wishlist_nav">
+                        <div class="content">
+                            <p class="heading">Wishlist</p>
+                            <div class="close_icon">
+                                <i class="bx bx-plus"></i>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="wishlist_items">
+                        <div class="wishlist_item">
+                            <div class="image">
+                                <img class="scale-125" src="assets/images/home furnitures/product2.jpeg" alt="">
+                            </div>
+                            <p class="title">Wooden Stool</p>
+                            <p class="total_price"><i class="currency_type"><i class="currency"></i></i> 87.00</p>
+                            <i class="bx bx-trash"></i>
+                        </div>
+                        <div class="wishlist_item">
+                            <div class="image">
+                                <img src="assets/images/premium products/product8.png" alt="">
+                            </div>
+                            <p class="title">Mirror Set</p>
+                            <p class="total_price"><i class="currency_type"><i class="currency"></i></i> 375.00</p>
+                            <i class="bx bx-trash"></i>
+                        </div>
+                        <div class="wishlist_item">
+                            <div class="image">
+                                <img src="assets/images/premium products/product2.png" alt="">
+                            </div>
+                            <p class="title">Picture Frame</p>
+                            <p class="total_price"><i class="currency_type"><i class="currency"></i></i> 125.80</p>
+                            <i class="bx bx-trash"></i>
+                        </div>
+                    </div>
+                    <div class="clear_all_btn"><span>Clear All <i class="bx bx-trash-alt"></i></span></div>
+                </div>
+            </nav>
+            <div id="header_content" class="flex items-center">
+                <div class="flex items-center absolute top-[50%] translate-y-[-50%] right-0 mt-[1.5rem] h-full max-lg:right-[unset] max-lg:translate-x-[525px]">
+                    <img class="h-[29rem] max-[1150px]:h-[25rem] mr-[5rem] max-[1150px]:mr-[2.5rem]" src="assets/images/header-img.png" alt="">
+                    <div class="-z-[1] absolute top-[50%] right-0 translate-y-[-50%] w-80 max-[1150px]:w-[15rem] h-[80%] bg-secondary-300 bg-opacity-40 rounded-l-xl"></div>
+                </div>
+                
+                <div class="header_text">
+                    <p class="text-[3.5rem] leading-[4.5rem] max-[1150px]:text-[3.3rem] text-primary-200 font-medium">We Don't Just Make <span class="font-[900] text-primary-300">Furnitures</span></p>
+                    <p>Iusto numquam facere quam. Delectus esse natus, ipsam nam nobis ea corporis distinctio, Omnis, tempore? Quasi rem.</p>
+                    <a href="" class="bg-secondary-300 hover:bg-black hover:translate-x-1 hover: transition ease-linear duration-300 text-white py-4 px-6 mt-3 w-fit flex items-center gap-2">Shop Now <i class="bx bx-right-arrow-alt"></i></a>    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex justify-center"> <!-- shop by category section -->
+        <div class="section_content mb-[5rem]">
+            <div class="ml-8">
+                <p class="heading pb-6">Shop By Category</p>
+                <!-- <p class="w-[27rem] text-primary-200">Shop & navigate through a list of furnitures according to their categories.</p> -->
+            </div>
+            <div class="flex gap-6 justify-center mt-8 font-medium">
+                <p class="shopping_nav active">Chairs</p>
+                <p class="shopping_nav">Tables</p>
+                <p class="shopping_nav">Lamps</p>
+            </div>
+            <div class="mt-8 p-8 grid grid-cols-6 max-[1150px]:grid-cols-5 gap-x-6 gap-y-10">
+                <div class="items_one">
+                    <div class="image">
+                        <img class="p-3" src="assets/images/Chair-Free-PNG-Image.png" alt="">
+                    </div>
+                    <p>Chair</p>
+                </div>
+                <div class="items_one">
+                    <div class="image">
+                        <img src="assets/images/kisspng-bedside-tables-coffee-tables-chair-furniture-side-tables-5b11936b23ca32.2484939715278785071466.png" alt="">
+                    </div>
+                    <p>Black Stool</p>
+                </div>
+                <div class="items_one">
+                    <div class="image">
+                        <img src="assets/images/kisspng-table-bar-stool-wood-chair-bar-5abc1fbbe4c9c8.2231737615222783319371.png" alt="">
+                    </div>
+                    <p>Stool</p>
+                </div>
+                <div class="items_one">
+                    <div class="image">
+                        <img src="assets/images/Accent-Chair-PNG-Isolated-Image.png" alt="">
+                    </div>
+                    <p>Accent Chair</p>
+                </div>
+                <div class="items_one">
+                    <div class="image">
+                        <img class="p-3" src="assets/images/Image-Source-PlusPNG.com.png" alt="">
+                    </div>
+                    <p>Clock Frame</p>
+                </div>
+                <div class="items_one">
+                    <div class="image">
+                        <img src="assets/images/couch-sofa-bed-chair-living-room-furniture-sofa-bbca5bfff4112c04605bf11f48065310.png" alt="">
+                    </div>
+                    <p>Sofa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center mb-16"> <!-- diagram section -->
+        <div class="section_content relative max-xl:mx-8 bg-secondary-200 py-16">
+            <div class="w-full h-[30rem]">
+                <img class="absolute top-0 left-0 z-[1] size-full object-contain object-bottom" src="assets/images/kisspng-window-living-room-curtain-couch-furniture-american-simple-casual-single-modern-sofa-5a8f756bba9777.2104868115193511477643.png" alt="">
+                <div class="bg-gray-100 w-fit p-4 absolute top-0 left-0 mt-[16rem] ml-[10rem] z-[2]">
+                    <div class="bg-white p-4 w-32 h-fit">
+                        <img src="assets/images/images (32).jpeg" alt="">
+                    </div>
+                    <div class="text-sm mt-4 font-medium text-center">
+                        <p class="font-semibold">Wooden Table</p>
+                        <p class="flex justify-between mt-1"><span><i class="currency_type"><i class="currency"></i></i> 113.00</span> <span class="text-gray-500"><i class="currency_type"><i class="currency"></i></i> 144.00</span></p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 w-fit p-4 absolute top-0 right-0  mt-[10rem] mr-[14rem] z-[2]">
+                    <div class="bg-white w-32 px-2 py-7 h-fit">
+                        <img src="assets/images/couch-sofa-bed-chair-living-room-furniture-sofa-bbca5bfff4112c04605bf11f48065310.png" alt="">
+                    </div>
+                    <div class="text-sm mt-4 font-medium text-center">
+                        <p class="font-semibold">Yellow Sofa</p>
+                        <p class="flex justify-between mt-1"><span><i class="currency_type"><i class="currency"></i></i> 101.02</span> <span class="text-gray-500 "><i class="currency_type"><i class="currency"></i></i> 125.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center"> <!-- discount countdown section -->
+        <div class="section_content max-xl:mx-8 flex text-4xl max-[1150px]:text-3xl justify-between items-center border-b-[2px] border-primary-100 py-14 max-[1150px]:py-10">
+            <div>
+                <p class="tracking-wider font-extrabold">DISCOUNTS ARE FOR A <span class="text-secondary-300">LIMITED</span> TIME!</p>
+            </div>
+            <div class="flex text-primary-200 font-semibold">
+                <p id="hours">00</p><span> h</span>
+                <p class="-translate-y-[3px] mx-2 text-secondary-300">:</p>
+                <p id="minutes">00</p><span> m</span>
+                <p class="-translate-y-[3px] mx-2 text-secondary-300">:</p>
+                <p id="seconds">00</p><span> s</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center mb-[5rem]"> <!-- shop premium products section -->
+        <div class="section_content max-xl:mx-8">
+            <div class="flex justify-between items-center mx-8 my-20">
+                <p class="heading">Shop Premium Products</p>
+                <div class="flex gap-6 font-semibold">
+                    <a id="sortAll" class="sort_links active">All</a>
+                    <a id="sortNew" class="sort_links">Newest</a>
+                    <a id="sortDiscounted" class="sort_links">Discounted</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 gap-x-16 gap-y-20">
+                <div class="item_three newly_produced">
+                    <div class="first_content">
+                        <p class="new">New</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product1.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Fold Screen</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <span>(5k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 199.30</p>
+                    </div>
+                </div>
+                <div class="item_three discounted">
+                    <div class="first_content">
+                        <p class="discount">-15% Off</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product2.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Picture Frame</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                            <i class="bx bx-star"></i>
+                            <span>(3k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 125.80 <span><i class="currency_type"><i class="currency"></i></i> 148.00</span></p>
+                    </div>
+                </div>
+                <div class="item_three newly_produced">
+                    <div class="first_content">
+                        <p class="new">New</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product3.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Shelf Stand</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span>(4k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 175.02</p>
+                    </div>
+                </div>
+                <div class="item_three discounted">
+                    <div class="first_content">
+                        <p class="discount">-19% Off</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product4.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Table</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                            <i class="bx bx-star"></i>
+                            <span>(3k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 133.27 <span><i class="currency_type"><i class="currency"></i></i> 167.00</span></p>
+                    </div>
+                </div>
+                <div class="item_three discounted">
+                    <div class="first_content">
+                        <p class="discount">-13% Off</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product5.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Bed Frame</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                            <span>(1k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 85.4775 <span><i class="currency_type"><i class="currency"></i></i> 98.25</span></p>
+                    </div>
+                </div>
+                <div class="item_three newly_produced">
+                    <div class="first_content">
+                        <p class="new">New</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product6.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">TV Frame</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span>(6k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 215.00</p>
+                    </div>
+                </div>
+                <div class="item_three newly_produced">
+                    <div class="first_content">
+                        <p class="new">New</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product7.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Chair</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <span>(5k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 486.34</p>
+                    </div>
+                </div>
+                <div class="item_three discounted">
+                    <div class="first_content">
+                        <p class="discount">-25% OFF</p>
+                        <div class="btns">
+                            <i class="bx bx-cart-alt"></i>
+                            <i class="bx bx-fullscreen"></i>
+                            <i class="bx bx-heart"></i>
+                        </div>
+                        <div class="add_to_cart_btn"><i class="bx bx-cart-add"></i> Add To Cart</div>
+                        <img src="assets/images/premium products/product8.png" alt="">
+                    </div>
+                    <div class="second_content">
+                        <p class="title">Mirror Set</p>
+                        <p class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <span>(8k)</span>
+                        </p>
+                        <p class="price"><i class="currency_type"><i class="currency"></i></i> 375.00 <span><i class="currency_type"><i class="currency"></i></i> 500.00</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center mt-16">
+                <a href="" class="bg-secondary-300 hover:bg-primary-300 hover:translate-y-1 transition duration-300 text-white py-3 px-6 flex items-center gap-2 w-fit group">View More <i class="group-hover:translate-x-1 transition duration-300 bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center bg-secondary-100 mb-[7rem]"> <!-- services section -->
+        <div class="section_content max-xl:mx-8 pt-[20rem] relative mt-[20rem]">
+            <div class="w-full h-[30rem] absolute bottom-[100%] translate-y-[15rem]">
+                <img class="rounded-2xl absolute top-0 left-0 size-full object-cover object-bottom bg-fixed" src="assets/images/interior-wall-mockup-with-sofa-cabinet-living-room-with-empty-white-wall-background-3d-rendering.jpg" alt="">
+                <i class="bx bx-play text-3xl cursor-pointer bg-white rounded-full size-[5rem] hover:scale-110 transition duration-200 flex justify-center items-center absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]"></i>
+            </div>
+            <div class="grid grid-cols-3 max-[1120px]:grid-cols-2 justify-evenly gap-20 pb-[7rem]">
+                <div class="items_two">
+                    <i class="bx bx-timer"></i>
+                    <p>Fast Delivery</p>
+                </div>
+                <div class="items_two">
+                    <i class="bx bx-wifi-off"></i>
+                    <p>24/7 Offline Support</p>
+                </div>
+                <div class="items_two">
+                    <i class="bx bx-credit-card"></i>
+                    <p>Easy Payment Method</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center pb-[7rem]"> <!-- shop home furnitures section -->
+        <section class="section_content max-xl:mx-8">
+            <div class="pb-16 ml-8">
+                <p class="heading">Shop Home Furnitures</p>
+            </div>
+            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 gap-x-8 gap-y-14">
+                <div class="items_four">
+                    <div class="first_content">
+                        <div class="discount">-23% Off</div>
+                        <img src="assets/images/home furnitures/product1.jpeg" alt="">
+                        <div class="add_to_cart_btn">ADD TO CART</div>
+                    </div>
+                    <div class="second_content">
+                        <div class="text">
+                            <p class="title">Wooden Chair</p>
+                            <p class="price"><i class="currency_type"><i class="currency"></i></i> 87.00</p>
+                        </div>
+                        <p class="category">Comfortability</p>
+                    </div>
+                </div>
+                <div class="items_four">
+                    <div class="first_content">
+                        <img src="assets/images/home furnitures/product2.jpeg" alt="">
+                        <div class="add_to_cart_btn">ADD TO CART</div>
+                    </div>
+                    <div class="second_content">
+                        <div class="text">
+                            <p class="title">Wooden Stool</p>
+                            <p class="price"><i class="currency_type"><i class="currency"></i></i> 72.05</p>
+                        </div>
+                        <p class="category">Comfortability</p>
+                    </div>
+                </div>
+                <div class="items_four">
+                    <div class="first_content">
+                        <div class="new">NEW</div>
+                        <img src="assets/images/home furnitures/product3.jpg" alt="">
+                        <div class="add_to_cart_btn">ADD TO CART</div>
+                    </div>
+                    <div class="second_content">
+                        <div class="text">
+                            <p class="title">Luxurious Shelf</p>
+                            <p class="price"><i class="currency_type"><i class="currency"></i></i> 114.03</p>
+                        </div>
+                        <p class="category">Decoration</p>
+                    </div>
+                </div>
+                <div class="items_four">
+                    <div class="first_content">
+                        <div class="discount">-17% Off</div>
+                        <img src="assets/images/home furnitures/product4.jpg" alt="">
+                        <div class="add_to_cart_btn">ADD TO CART</div>
+                    </div>
+                    <div class="second_content">
+                        <div class="text">
+                            <p class="title">Wooden Chair</p>
+                            <p class="price"><i class="currency_type"><i class="currency"></i></i> 134.00</p>
+                        </div>
+                        <p class="category">Comfortability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="flex justify-center"> <!-- newsletter section -->
+        <div class="section_content max-xl:mx-8 bg-secondary-200 py-20 max-[1120px]:px-10 flex justify-center max-[1120px]:justify-between items-center relative">
+            <div class="flex flex-col gap-8 mt-4">
+                <div class="size-28 absolute top-0 left-0 mt-10 mx-44 bg-black text-white flex justify-center items-center rounded-full text-center text-xl max-[1120px]:left-[unset] max-[1120px]:right-0 max-[1120px]:rounded-none max-[1120px]:m-0 max-[1120px]:text-sm max-[1120px]:w-20 max-[1120px]:h-16 max-[1240px]:size-24 max-[1240px]:mt-5 max-[1240px]:mx-24 max-[1240px]:text-base">New<br>Launch</div>
+                <p class="text-[3.5rem] text-black tracking-wider">Get <span class="font-extrabold">45%</span> Discount</p>
+                <p class="text-[0.95rem] max-w-[33rem] leading-6">Quasi consequuntur adipisci quia delectus blanditiis itaque beatae laboriosam nulla, amet, praesentium magni placeat!</p>
+                <div class="flex items-center justify-between gap-4 pl-1 pr-6 py-1 border-[1px] border-secondary-300">
+                    <input class="bg-transparent tracking-[0.3rem] text-xs py-3 px-4 w-full" type="text" value="EMAIL">
+                    <div class="flex items-center text-black gap-2 cursor-pointer hover:text-secondary-300">Subscribe <i class="bx bx-right-arrow-alt text-secondary-300 size-6 flex justify-center items-center rounded-full border-[1px] border-secondary-300"></i></div>
+                </div>
+            </div>
+            <img class="w-44 absolute top-[50%] translate-y-[-35%] left-[3rem] max-[1120px]:right-[2rem] max-[1120px]:relative max-[1120px]:w-48 max-[1120px]:left-[unset] max-[1120px]:top-[unset] max-[1120px]:translate-y-[unset]" src="assets/images/Accent-Chair-PNG-Isolated-Image.png" alt="">
+            <img class="w-44 absolute top-[50%] translate-y-[-50%] right-[4rem] max-[1120px]:hidden" src="assets/images/Chair-PNG-Transparent.png" alt="">
+        </div>
+    </section>
+
+    <section class="flex justify-center mt-[5rem] mb-[7rem]"> <!-- testimonial section -->
+        <div class="section_content max-xl:px-8 bg-secondary-100 py-16 px-16 flex justify-between items-center">
+            <div class="items_five">
+                <div class="left_content">
+                    <div class="image">
+                        <img src="assets/images/couch-sofa-bed-chair-living-room-furniture-sofa-bbca5bfff4112c04605bf11f48065310.png" alt=""> 
+                    </div>
+                    <div class="txt">
+                        <p class="title">Sofa</p>
+                        <p class="price">
+                            <span><i class="currency_type"><i class="currency"></i></i> 486.34 </span>
+                            <span class="slashed"><i class="currency_type"><i class="currency"></i></i> 630.00</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="right_content">
+                    <p class="heading flex items-center gap-6"><i class="bx bxs-quote-right text-5xl text-secondary-300"></i>Customer's Feedback</p>
+                    <div class="flex flex-col gap-8 max-[1120px]:max-w-[60rem]">
+                        <p class="comment">Sint officia maiores, dolorem nisi labore, possimus quo in incidunt sequi voluptatem qui repellendus. Quo nostrum ipsam illo. Magnam sit iure ullam, aperiam, soluta, enim dolores vel quas error id delectus. Quos, adipisci repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatibus.</p>
+                        <div class="client_details">
+                            <img class="client_img" src="assets/images/1715219001072.jpg" alt="">
+                            <div class="txt">
+                                <p class="client_name">Francis Authority</p>
+                                <p class="client_title">CEO / FOUNDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center mb-[7rem]"> <!-- news & blogs section -->
+        <div class="section_content max-xl:mx-8">
+            <div class="mx-8 mb-[4rem] flex justify-between items-center">
+                <p class="heading">Latest News & Blogs</p>
+                <a href="" class="bg-secondary-300 hover:bg-black transition duration-300 text-white px-6 py-3">View All Blogs</a>
+            </div>
+            <div class="grid grid-cols-2 max-[1120px]:grid-cols-1 gap-x-4 gap-y-10">
+                <div class="items_six">
+                    <div class="text">
+                        <p class="date">15TH JUNE, 2024</p>
+                        <p class="title">We Don't Just Make Furnitures.</p>
+                        <p class="info">Quibusdam expedita autem doloremque quas iste.</p>
+                        <a href="" class="read_more">Read More</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/images/images (35).jpeg" alt="">
+                    </div>
+                </div>
+                <div class="items_six">
+                    <div class="text">
+                        <p class="date">11TH SEP, 2024</p>
+                        <p class="title">How To Choose The Right Furniture.</p>
+                        <p class="info">Cum voluptatem unde recusandae ullam delectus rerum adipisci.</p>
+                        <a href="" class="read_more">Read More</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/images/interior-wall-mockup-with-sofa-cabinet-living-room-with-empty-white-wall-background-3d-rendering.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex justify-center bg-gray-50"> <!-- footer section -->
+        <div class="section_content grid grid-cols-10 max-[1120px]:grid-rows-2 items-start gap-24 py-16 px-8">
+            <div class="flex flex-col gap-6 col-span-3 max-[1120px]:col-span-4">
+                <p class="text-primary-200 text-[1.5rem] font-extrabold tracking-[0.1rem]">Furnitue</p>
+                <p class="text-primary-200 text-[0.95rem]">Commodi ea, ab expedita, animi fugiat iste quidem, aliquam accusantium vero quia nobis. Eum, ex? Ab perferendis consequuntur praesentium. Vel, nesciunt asperiores.</p>
+                <p class="flex gap-3 mt-2 text-[1.7rem] text-black">
+                    <i class="bx bxl-whatsapp hover:text-secondary-300 cursor-pointer"></i>
+                    <i class="bx bxl-instagram hover:text-secondary-300 cursor-pointer"></i>
+                    <i class="bx bxl-youtube hover:text-secondary-300 cursor-pointer"></i>
+                    <i class="bx bxl-facebook hover:text-secondary-300 cursor-pointer"></i>
+                    <i class="bx bxl-tiktok hover:text-secondary-300 cursor-pointer"></i>
+                </p>
+            </div>
+            <div class="col-span-2 max-[1120px]:col-span-3">
+                <p class="footer_heading">Contact Us</p>
+                <div class="footer_subtext">
+                    <p>55552 Sand Fields, Washington DC, 762453.</p>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +2349163147101</p>
+                </div>
+            </div>
+            <div class="col-span-2 max-[1120px]:col-span-3">
+                <p class="footer_heading">Products</p>
+                <div class="footer_subtext">
+                    <p class="links">Shop All</p>
+                    <p class="links">Chairs</p>
+                    <p class="links">Tables</p>
+                    <p class="links">Lamps</p>
+                    <p class="links">Shelves</p>
+                    <p class="links">Sofa</p>
+                </div>
+            </div>
+            <img class="col-span-3 size-full object-contain" src="assets/images/map.png" alt="">
+        </div>
+    </footer>
+
+    <script src="index.js"></script> <!-- link to JavaScript -->
+</body>
+</html>
