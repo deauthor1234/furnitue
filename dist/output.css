@@ -1957,7 +1957,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .shopping_nav{
-  cursor: pointer;
+  cursor: not-allowed;
   border-radius: 9999px;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1981,6 +1981,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .shopping_nav.active{
+  cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(158 103 72 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
