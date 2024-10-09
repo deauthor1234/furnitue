@@ -3217,8 +3217,25 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media (max-width: 686px){
+  .max-\[686px\]\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .max-\[686px\]\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .max-\[686px\]\:leading-10{
     line-height: 2.5rem;
+  }
+
+  .max-\[686px\]\:leading-\[3rem\]{
+    line-height: 3rem;
+  }
+
+  .max-\[686px\]\:leading-\[3\.5rem\]{
+    line-height: 3.5rem;
   }
 }
 
