@@ -910,6 +910,10 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -1291,20 +1295,16 @@ video {
   font-weight: 600;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .leading-6{
   line-height: 1.5rem;
 }
 
 .leading-\[4\.5rem\]{
   line-height: 4.5rem;
-}
-
-.leading-3{
-  line-height: .75rem;
-}
-
-.leading-7{
-  line-height: 1.75rem;
 }
 
 .tracking-\[0\.1rem\]{
@@ -1403,6 +1403,12 @@ html::-webkit-scrollbar-thumb{
 .heading{
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+@media (max-width: 910px){
+  .heading{
+    font-size: 1.4rem;
+  }
 }
 
 .currency{
@@ -3121,8 +3127,97 @@ html::-webkit-scrollbar-thumb{
     display: none;
   }
 
+  .max-\[970px\]\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .max-\[970px\]\:justify-center{
     justify-content: center;
+  }
+}
+
+@media (max-width: 910px){
+  .max-\[910px\]\:top-\[50\%\]{
+    top: 50%;
+  }
+
+  .max-\[910px\]\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .max-\[910px\]\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .max-\[910px\]\:h-\[20rem\]{
+    height: 20rem;
+  }
+
+  .max-\[910px\]\:translate-y-\[-50\%\]{
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-\[910px\]\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .max-\[910px\]\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 840px){
+  .max-\[840px\]\:flex{
+    display: flex;
+  }
+
+  .max-\[840px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .max-\[800px\]\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .max-\[800px\]\:hidden{
+    display: none;
+  }
+
+  .max-\[800px\]\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-\[800px\]\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .max-\[800px\]\:gap-8{
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 750px){
+  .max-\[750px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 690px){
+  .max-\[690px\]\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 686px){
+  .max-\[686px\]\:leading-10{
+    line-height: 2.5rem;
   }
 }
 

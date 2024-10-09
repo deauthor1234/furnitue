@@ -11,14 +11,14 @@
 <body class="font-Poppins text-base text-primary-200">
     <div class="bg-primary-200 text-neutral-300 flex justify-center py-2 text-[0.9rem]"> <!-- top section -->
         <div class="section_content max-xl:max-w-full max-xl:px-8 flex items-center justify-between">
-            <div class="text-xl flex items-center gap-2 max-lg:hidden">
+            <div class="text-xl flex items-center gap-2 max-lg:hidden max-[840px]:flex">
                 <a href=""><i class="bx bxl-whatsapp hover:text-neutral-100 cursor-pointer"></i></a>
                 <a href=""><i class="bx bxl-instagram hover:text-neutral-100 cursor-pointer"></i></a>
                 <a href=""><i class="bx bxl-youtube hover:text-neutral-100 cursor-pointer"></i></a>
                 <a href=""><i class="bx bxl-facebook hover:text-neutral-100 cursor-pointer"></i></a>
                 <a href=""><i class="bx bxl-tiktok hover:text-neutral-100 cursor-pointer"></i></a>
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-4 max-[840px]:hidden">
                 <p class="hover:text-neutral-100 cursor-pointer">Track Your Order</p>
                 <div class="bg-neutral-300 w-[2px] max-h-[20px]"></div>
                 <p>info@trackyourorder.com</p>
@@ -218,9 +218,9 @@
                 </div>
             </nav>
             <div id="header_content" class="flex items-center">
-                <div class="flex items-center absolute top-[50%] translate-y-[-50%] right-0 mt-[1.5rem] h-full max-lg:right-[unset] max-lg:translate-x-[525px]">
+                <div class="flex items-center absolute top-[50%] translate-y-[-50%] right-0 mt-[1.5rem] h-full max-lg:right-[unset] max-lg:translate-x-[525px] max-[750px]:hidden">
                     <img class="h-[29rem] max-[1150px]:h-[25rem] mr-[5rem] max-[1150px]:mr-[2.5rem]" src="assets/images/header-img.png" alt="">
-                    <div class="-z-[1] absolute top-[50%] right-0 translate-y-[-50%] w-80 max-[1150px]:w-[15rem] h-[80%] bg-secondary-300 bg-opacity-40 rounded-l-xl"></div>
+                    <div class="-z-[1] absolute top-[50%] right-0 translate-y-[-50%] w-80 max-[1150px]:w-[15rem] h-[80%] bg-secondary-300 bg-opacity-40 rounded-l-xl max-[800px]:hidden"></div>
                 </div>
                 
                 <div class="header_text">
@@ -243,7 +243,7 @@
                 <p class="shopping_nav">Tables</p>
                 <p class="shopping_nav">Lamps</p>
             </div>
-            <div class="mt-8 p-8 grid grid-cols-6 max-[1150px]:grid-cols-5 gap-x-6 gap-y-10">
+            <div class="mt-8 p-8 grid grid-cols-6 max-[1150px]:grid-cols-5 max-[970px]:grid-cols-4 gap-x-6 gap-y-10 max-[800px]:grid-cols-3">
                 <div class="items_one">
                     <div class="image">
                         <img class="p-3" src="assets/images/Chair-Free-PNG-Image.png" alt="">
@@ -286,9 +286,9 @@
 
     <section class="flex justify-center mb-16"> <!-- diagram section -->
         <div class="section_content relative max-xl:mx-8 bg-secondary-200 py-16">
-            <div class="w-full h-[30rem]">
+            <div class="w-full h-[30rem] max-[910px]:h-[20rem]">
                 <img class="absolute top-0 left-0 z-[1] size-full object-contain object-bottom" src="assets/images/kisspng-window-living-room-curtain-couch-furniture-american-simple-casual-single-modern-sofa-5a8f756bba9777.2104868115193511477643.png" alt="">
-                <div class="bg-gray-100 w-fit p-4 absolute top-0 left-0 mt-[16rem] ml-[10rem] z-[2]">
+                <div class="bg-gray-100 w-fit p-4 absolute top-0 left-0 mt-[16rem] ml-[10rem] z-[2] max-[910px]:top-[50%] max-[910px]:translate-y-[-50%] max-[910px]:my-0 max-[840px]:hidden">
                     <div class="bg-white p-4 w-32 h-fit">
                         <img src="assets/images/images (32).jpeg" alt="">
                     </div>
@@ -297,7 +297,7 @@
                         <p class="flex justify-between mt-1"><span><i class="currency_type"><i class="currency"></i></i> 113.00</span> <span class="text-gray-500"><i class="currency_type"><i class="currency"></i></i> 144.00</span></p>
                     </div>
                 </div>
-                <div class="bg-gray-100 w-fit p-4 absolute top-0 right-0  mt-[10rem] mr-[14rem] z-[2]">
+                <div class="bg-gray-100 w-fit p-4 absolute top-0 right-0  mt-[10rem] mr-[14rem] z-[2] max-[910px]:top-[50%] max-[910px]:translate-y-[-50%] max-[910px]:my-0 max-[840px]:hidden">
                     <div class="bg-white w-32 px-2 py-7 h-fit">
                         <img src="assets/images/couch-sofa-bed-chair-living-room-furniture-sofa-bbca5bfff4112c04605bf11f48065310.png" alt="">
                     </div>
@@ -311,9 +311,9 @@
     </section>
 
     <section class="flex justify-center"> <!-- discount countdown section -->
-        <div class="section_content max-xl:mx-8 flex gap-8 text-4xl max-[1150px]:text-3xl justify-between border-b-[2px] border-primary-100 py-14 max-[1150px]:py-10">
+        <div class="section_content max-xl:mx-8 flex gap-12 text-4xl max-[1150px]:text-3xl max-[910px]:text-2xl justify-between border-b-[2px] border-primary-100 py-14 max-[1150px]:py-10 max-[910px]:py-6">
             <div>
-                <p class="tracking-wider font-extrabold leading-12">DISCOUNTS ARE FOR A <span class="text-secondary-300">LIMITED</span> TIME!</p>
+                <p class="tracking-wider font-extrabold leading-10">DISCOUNTS ARE FOR A <span class="text-secondary-300">LIMITED</span> TIME!</p>
             </div>
             <div class="flex text-primary-200 font-semibold">
                 <p id="hours">00</p><span> h</span>
@@ -327,7 +327,7 @@
 
     <section class="flex justify-center mb-[5rem]"> <!-- shop premium products section -->
         <div class="section_content max-xl:mx-8">
-            <div class="flex justify-between items-center mx-8 my-20">
+            <div class="flex justify-between items-center mx-8 max-[800px]:mx-0 my-20">
                 <p class="heading">Shop Premium Products</p>
                 <div class="flex gap-6 font-semibold">
                     <a id="sortAll" class="sort_links active">All</a>
@@ -335,7 +335,7 @@
                     <a id="sortDiscounted" class="sort_links">Discounted</a>
                 </div>
             </div>
-            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 gap-x-16 gap-y-20">
+            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 max-[800px]:grid-cols-2 gap-x-16 gap-y-20">
                 <div class="item_three newly_produced">
                     <div class="first_content">
                         <p class="new">New</p>
@@ -542,7 +542,7 @@
                 <img class="rounded-2xl absolute top-0 left-0 size-full object-cover object-bottom bg-fixed" src="assets/images/interior-wall-mockup-with-sofa-cabinet-living-room-with-empty-white-wall-background-3d-rendering.jpg" alt="">
                 <i class="bx bx-play text-3xl cursor-pointer bg-white rounded-full size-[5rem] hover:scale-110 transition duration-200 flex justify-center items-center absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]"></i>
             </div>
-            <div class="grid grid-cols-3 max-[1120px]:grid-cols-2 justify-evenly gap-20 pb-[7rem]">
+            <div class="grid grid-cols-3 max-[1120px]:grid-cols-2 max-[690px]:grid-cols-1 justify-evenly gap-20 max-[800px]:gap-8 pb-[7rem]">
                 <div class="items_two">
                     <i class="bx bx-timer"></i>
                     <p>Fast Delivery</p>
@@ -564,7 +564,7 @@
             <div class="pb-16 ml-8">
                 <p class="heading">Shop Home Furnitures</p>
             </div>
-            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 gap-x-8 gap-y-14">
+            <div class="grid grid-cols-4 max-[1120px]:grid-cols-3 max-[800px]:grid-cols-2 gap-x-8 gap-y-14">
                 <div class="items_four">
                     <div class="first_content">
                         <div class="discount">-23% Off</div>
@@ -628,7 +628,7 @@
         <div class="section_content max-xl:mx-8 bg-secondary-200 py-20 max-[1120px]:px-10 flex justify-center max-[1120px]:justify-between max-[970px]:justify-center items-center relative">
             <div class="flex flex-col gap-8 mt-4">
                 <div class="size-28 absolute top-0 left-0 mt-10 mx-44 bg-black text-white flex justify-center items-center rounded-full text-center text-xl max-[1120px]:left-[unset] max-[1120px]:right-0 max-[1120px]:rounded-none max-[1120px]:m-0 max-[1120px]:text-sm max-[1120px]:w-20 max-[1120px]:h-16 max-[1240px]:size-24 max-[1240px]:mt-5 max-[1240px]:mx-24 max-[1240px]:text-base">New<br>Launch</div>
-                <p class="text-[3.5rem] text-black tracking-wider">Get <span class="font-extrabold">45%</span> Discount</p>
+                <p class="text-[3.5rem] text-black tracking-wider max-[686px]:leading-10">Get <span class="font-extrabold">45%</span> Discount</p>
                 <p class="text-[0.95rem] max-w-[33rem] leading-6">Quasi consequuntur adipisci quia delectus blanditiis itaque beatae laboriosam nulla, amet, praesentium magni placeat!</p>
                 <div class="flex items-center justify-between gap-4 pl-1 pr-6 py-1 border-[1px] border-secondary-300">
                     <input class="bg-transparent tracking-[0.3rem] text-xs py-3 px-4 w-full" type="text" value="EMAIL">
@@ -707,7 +707,7 @@
 
     <footer class="flex justify-center bg-gray-50"> <!-- footer section -->
         <div class="section_content grid grid-cols-10 max-[1120px]:grid-rows-2 items-start gap-24 py-16 px-8">
-            <div class="flex flex-col gap-6 col-span-3 max-[1120px]:col-span-4">
+            <div class="flex flex-col gap-6 col-span-3 max-[1120px]:col-span-4 max-[910px]:col-span-4">
                 <p class="text-primary-200 text-[1.5rem] font-extrabold tracking-[0.1rem]">Furnitue</p>
                 <p class="text-primary-200 text-[0.95rem]">Commodi ea, ab expedita, animi fugiat iste quidem, aliquam accusantium vero quia nobis. Eum, ex? Ab perferendis consequuntur praesentium. Vel, nesciunt asperiores.</p>
                 <p class="flex gap-3 mt-2 text-[1.7rem] text-black">
@@ -718,7 +718,7 @@
                     <i class="bx bxl-tiktok hover:text-secondary-300 cursor-pointer"></i>
                 </p>
             </div>
-            <div class="col-span-2 max-[1120px]:col-span-3">
+            <div class="col-span-2 max-[1120px]:col-span-3 max-[910px]:col-span-4">
                 <p class="footer_heading">Contact Us</p>
                 <div class="footer_subtext">
                     <p>55552 Sand Fields, Washington DC, 762453.</p>
@@ -726,7 +726,7 @@
                     <p>Phone: +2349163147101</p>
                 </div>
             </div>
-            <div class="col-span-2 max-[1120px]:col-span-3">
+            <div class="col-span-2 max-[1120px]:col-span-3 max-[910px]:col-span-4">
                 <p class="footer_heading">Products</p>
                 <div class="footer_subtext">
                     <p class="links">Shop All</p>
@@ -737,7 +737,7 @@
                     <p class="links">Sofa</p>
                 </div>
             </div>
-            <img class="col-span-3 size-full object-contain" src="assets/images/map.png" alt="">
+            <img class="col-span-3 size-full object-contain max-[910px]:col-span-4" src="assets/images/map.png" alt="">
         </div>
     </footer>
 
