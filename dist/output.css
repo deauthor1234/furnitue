@@ -3205,8 +3205,40 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media (max-width: 750px){
+  .max-\[750px\]\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .max-\[750px\]\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
+  .max-\[750px\]\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .max-\[750px\]\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
+  .max-\[750px\]\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .max-\[750px\]\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .max-\[750px\]\:hidden{
     display: none;
+  }
+
+  .max-\[750px\]\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-\[750px\]\:gap-16{
+    gap: 4rem;
   }
 }
 
