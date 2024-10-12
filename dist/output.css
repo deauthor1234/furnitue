@@ -890,6 +890,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -974,8 +978,25 @@ video {
   row-gap: 5rem;
 }
 
+.gap-x-\[3rem\]{
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.gap-y-\[2rem\]{
+  row-gap: 2rem;
+}
+
+.gap-y-\[1rem\]{
+  row-gap: 1rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-wrap{
+  text-wrap: wrap;
 }
 
 .rounded-2xl{
@@ -3258,8 +3279,22 @@ html::-webkit-scrollbar-thumb{
     padding-bottom: 3.5rem;
   }
 
+  .max-\[686px\]\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .max-\[686px\]\:text-\[3rem\]{
+    font-size: 3rem;
+  }
+
   .max-\[686px\]\:leading-\[3\.5rem\]{
     line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 620px){
+  .max-\[620px\]\:gap-8{
+    gap: 2rem;
   }
 }
 
