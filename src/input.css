@@ -366,6 +366,11 @@ html::-webkit-scrollbar-thumb {
     @apply opacity-100 pointer-events-auto transition ease-out duration-300;
 }
 
+.item_three .btns,
+.item_three .add_to_cart_btn {
+    @apply max-md:opacity-100 max-md:pointer-events-auto max-md:transition-none;
+}
+
 .item_three .btns i {
     @apply rounded-full cursor-pointer size-10 flex items-center justify-center hover:bg-gray-400 hover:bg-opacity-45;
 }
