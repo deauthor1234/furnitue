@@ -366,17 +366,17 @@ html::-webkit-scrollbar-thumb {
     @apply opacity-100 pointer-events-auto transition ease-out duration-300;
 }
 
-.item_three .btns,
-.item_three .add_to_cart_btn {
-    @apply max-md:opacity-100 max-md:pointer-events-auto max-md:transition-none;
-}
-
 .item_three .btns i {
     @apply rounded-full cursor-pointer size-10 flex items-center justify-center hover:bg-gray-400 hover:bg-opacity-45;
 }
 
 .item_three .add_to_cart_btn {
     @apply bg-primary-300 text-gray-200 text-center flex justify-center gap-2 items-center py-2 text-sm font-medium tracking-wider w-[80%] absolute z-10 bottom-0 opacity-0 pointer-events-none cursor-pointer hover:bg-secondary-300 hover:text-white my-6;
+}
+
+.item_three .btns,
+.item_three .add_to_cart_btn {
+    @apply max-md:opacity-100 max-md:pointer-events-auto max-md:transition-none;
 }
 
 .item_three .add_to_cart_btn i {
@@ -445,6 +445,10 @@ html::-webkit-scrollbar-thumb {
 
 .items_four:hover .add_to_cart_btn {
     @apply opacity-100 pointer-events-auto;
+}
+
+.items_four .add_to_cart_btn {
+    @apply max-md:opacity-100 max-md:pointer-events-auto;
 }
 
 .items_four .text {

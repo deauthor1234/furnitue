@@ -2377,15 +2377,6 @@ html::-webkit-scrollbar-thumb{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-@media not all and (min-width: 768px){
-  .item_three .btns,
-.item_three .add_to_cart_btn{
-    pointer-events: auto;
-    opacity: 1;
-    transition-property: none;
-  }
-}
-
 .item_three .btns i{
   display: flex;
   width: 2.5rem;
@@ -2433,6 +2424,15 @@ html::-webkit-scrollbar-thumb{
   background-color: rgb(158 103 72 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 768px){
+  .item_three .btns,
+.item_three .add_to_cart_btn{
+    pointer-events: auto;
+    opacity: 1;
+    transition-property: none;
+  }
 }
 
 .item_three .add_to_cart_btn i{
@@ -2620,6 +2620,13 @@ html::-webkit-scrollbar-thumb{
 .items_four:hover .add_to_cart_btn{
   pointer-events: auto;
   opacity: 1;
+}
+
+@media not all and (min-width: 768px){
+  .items_four .add_to_cart_btn{
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
 
 .items_four .text{
