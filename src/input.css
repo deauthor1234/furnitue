@@ -528,11 +528,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .items_six {
-    @apply w-full flex;
+    @apply w-full flex max-[510px]:flex-col-reverse;
 }
 
 .items_six .text {
-    @apply flex flex-col justify-around gap-4 py-10 px-8 bg-gray-100 w-[55%];
+    @apply flex flex-col justify-around gap-4 py-10 px-8 bg-gray-100 w-[55%] max-[510px]:w-full;
 }
 
 .items_six .text .date {
@@ -560,7 +560,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .items_six .image {
-    @apply w-[45%] relative;
+    @apply w-[45%] max-[510px]:w-full relative max-[510px]:h-[13rem];
 }
 
 .items_six .image img {
