@@ -2945,10 +2945,6 @@ html::-webkit-scrollbar-thumb{
   color: rgb(158 103 72 / var(--tw-text-opacity));
 }
 
-h {
-  background: #fdf0e6;
-}
-
 .hover\:translate-x-1:hover{
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3339,6 +3335,7 @@ h {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 
 
 

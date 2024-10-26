@@ -579,9 +579,6 @@ html::-webkit-scrollbar-thumb {
     @apply hover:text-secondary-300 cursor-pointer;
 }
 
-h {
-    background: #fdf0e6;
-}
 
 
 
