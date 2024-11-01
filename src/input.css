@@ -231,7 +231,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .shopping_nav {
-    @apply shadow-sm hover:bg-secondary-300 cursor-not-allowed hover:text-white transition duration-300 px-7 py-2 rounded-full;
+    @apply border border-gray-200 hover:border-secondary-300 hover:bg-secondary-300 cursor-not-allowed hover:text-white transition duration-300 px-7 py-2 rounded-full;
 }
 
 .shopping_nav.active {
