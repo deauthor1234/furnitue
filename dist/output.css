@@ -3332,6 +3332,35 @@ html::-webkit-scrollbar-thumb{
   .max-\[510px\]\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .max-\[510px\]\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .max-\[510px\]\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .max-\[510px\]\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 425px){
+  .max-\[425px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-\[425px\]\:justify-normal{
+    justify-content: normal;
+  }
+
+  .max-\[425px\]\:gap-4{
+    gap: 1rem;
+  }
 }
 
 
