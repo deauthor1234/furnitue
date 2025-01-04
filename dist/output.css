@@ -1563,6 +1563,13 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 425px){
+  .navbar-chng .navbar{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
 .side_navbar_overlay{
   position: fixed;
   top: 0px;
@@ -2236,6 +2243,13 @@ html::-webkit-scrollbar-thumb{
 .items_one .image:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 425px){
+  .items_one .image{
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  }
 }
 
 .items_one img{
@@ -3353,7 +3367,26 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 480px){
+  .max-\[480px\]\:text-\[2\.7rem\]{
+    font-size: 2.7rem;
+  }
+
+  .max-\[480px\]\:leading-\[3\.28rem\]{
+    line-height: 3.28rem;
+  }
+}
+
 @media (max-width: 425px){
+  .max-\[425px\]\:mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .max-\[425px\]\:ml-6{
+    margin-left: 1.5rem;
+  }
+
   .max-\[425px\]\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -3370,8 +3403,14 @@ html::-webkit-scrollbar-thumb{
     gap: 1rem;
   }
 
-  .max-\[425px\]\:text-\[3rem\]{
-    font-size: 3rem;
+  .max-\[425px\]\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .max-\[425px\]\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 

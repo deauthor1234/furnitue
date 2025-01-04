@@ -82,7 +82,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .navbar-chng .navbar {
-    @apply max-w-[1200px] max-xl:mx-8;
+    @apply max-w-[1200px] max-xl:mx-8 max-[425px]:mx-6;
 }
 
 .side_navbar_overlay {
@@ -322,7 +322,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .items_one .image {
-    @apply bg-gray-50 hover:bg-gray-200 transition duration-300 border-secondary-300 cursor-pointer rounded-full w-full h-full relative; 
+    @apply bg-gray-50 max-[425px]:bg-gray-100 hover:bg-gray-200 transition duration-300 border-secondary-300 cursor-pointer rounded-full w-full h-full relative; 
 }
 
 .items_one img {
