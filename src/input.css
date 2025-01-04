@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .heading {
-    @apply text-[1.8rem] max-[910px]:text-[1.4rem] font-semibold;
+    @apply text-[1.8rem] max-[910px]:text-[1.4rem] font-semibold max-[425px]:leading-8;
 }
 
 .currency {

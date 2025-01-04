@@ -1425,6 +1425,12 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 425px){
+  .heading{
+    line-height: 2rem;
+  }
+}
+
 .currency{
   font-style: normal;
 }
