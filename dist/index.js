@@ -108,6 +108,12 @@ wishlistCloseBtn.addEventListener('click', () => {
     cartOverlay.classList.remove('show');
 });
 
+cartOverlay.addEventListener('click', () => {
+    wishlist.classList.remove('show');
+    cartOverlay.classList.remove('show');
+    cart.classList.remove('show');
+});
+
 //Navbar SLide Effect 
 let navbar = document.querySelector('.side_navbar');
 let overlay = document.querySelector('.side_navbar_overlay');
@@ -120,6 +126,11 @@ navbarOpenBtn.addEventListener('click', () => {
 });
 
 navbarCloseBtn.addEventListener('click', () => {
+    navbar.classList.remove('show');
+    overlay.classList.remove('show');
+});
+
+overlay.addEventListener('click', () => {
     navbar.classList.remove('show');
     overlay.classList.remove('show');
 });

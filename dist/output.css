@@ -3331,12 +3331,20 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media (max-width: 510px){
+  .max-\[510px\]\:hidden{
+    display: none;
+  }
+
   .max-\[510px\]\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-\[510px\]\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-\[510px\]\:justify-center{
+    justify-content: center;
   }
 
   .max-\[510px\]\:py-6{
@@ -3360,6 +3368,10 @@ html::-webkit-scrollbar-thumb{
 
   .max-\[425px\]\:gap-4{
     gap: 1rem;
+  }
+
+  .max-\[425px\]\:text-\[3rem\]{
+    font-size: 3rem;
   }
 }
 
