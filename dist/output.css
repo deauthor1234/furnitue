@@ -3387,6 +3387,16 @@ html::-webkit-scrollbar-thumb{
     margin-left: 1.5rem;
   }
 
+  .max-\[425px\]\:size-\[90\%\]{
+    width: 90%;
+    height: 90%;
+  }
+
+  .max-\[425px\]\:size-\[95\%\]{
+    width: 95%;
+    height: 95%;
+  }
+
   .max-\[425px\]\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
