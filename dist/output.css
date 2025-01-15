@@ -3401,6 +3401,10 @@ html::-webkit-scrollbar-thumb{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .max-\[425px\]\:grid-rows-1{
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
   .max-\[425px\]\:flex-col{
     flex-direction: column;
   }
