@@ -1624,6 +1624,13 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 425px){
+  .side_navbar{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .side_navbar.show{
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3355,20 +3362,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media (max-width: 510px){
-  .max-\[510px\]\:hidden{
-    display: none;
-  }
-
   .max-\[510px\]\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-\[510px\]\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .max-\[510px\]\:justify-center{
-    justify-content: center;
   }
 
   .max-\[510px\]\:py-6{

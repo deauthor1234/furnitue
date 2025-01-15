@@ -94,7 +94,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 .side_navbar {
-    @apply flex gap-16 max-[1120px]:gap-12 max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:bottom-0 max-lg:bg-white max-lg:flex-col max-lg:gap-0 max-lg:text-center max-lg:w-[420px] max-lg:transform max-lg:translate-x-[100%] max-lg:shadow-lg max-lg:transition max-lg:ease-out max-lg:duration-500 max-lg:z-[999];
+    @apply flex gap-16 max-[1120px]:gap-12 max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:bottom-0
+     max-lg:bg-white max-lg:flex-col max-lg:gap-0 max-lg:text-center max-lg:w-[420px] max-lg:transform 
+     max-lg:translate-x-[100%] max-lg:shadow-lg max-lg:transition max-lg:ease-out max-lg:duration-500 max-lg:z-[999]
+     max-[425px]:size-full;
 }
 
 .side_navbar.show {
