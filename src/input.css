@@ -201,7 +201,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .shopping_cart .cart_item .details {
-    @apply w-full flex justify-between items-center gap-2 col-span-3;
+    @apply w-full flex max-[425px]:flex-col justify-between items-center gap-2 max-[425px]:gap-4 col-span-3;
 }
 
 .shopping_cart .details .title {
