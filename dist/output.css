@@ -3338,6 +3338,12 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 590px){
+  .max-\[590px\]\:hidden{
+    display: none;
+  }
+}
+
 @media (max-width: 550px){
   .max-\[550px\]\:flex-col{
     flex-direction: column;
