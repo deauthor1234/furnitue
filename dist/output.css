@@ -1712,51 +1712,20 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
-.cart_icon{
+.nav_ic{
   position: relative;
 }
 
-.cart_icon i{
+.nav_ic i{
   cursor: pointer;
 }
 
-.cart_icon i:hover{
+.nav_ic i:hover{
   --tw-text-opacity: 1;
   color: rgb(142 142 142 / var(--tw-text-opacity));
 }
 
-.cart_icon span{
-  position: absolute;
-  top: -11px;
-  right: -11px;
-  display: flex;
-  width: 1.25rem;
-  height: 1.25rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(158 103 72 / var(--tw-bg-opacity));
-  font-size: 0.75rem;
-  line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.wishlist_icon{
-  position: relative;
-}
-
-.wishlist_icon i{
-  cursor: pointer;
-}
-
-.wishlist_icon i:hover{
-  --tw-text-opacity: 1;
-  color: rgb(142 142 142 / var(--tw-text-opacity));
-}
-
-.wishlist_icon span{
+.nav_ic span{
   position: absolute;
   top: -11px;
   right: -11px;

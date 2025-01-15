@@ -120,27 +120,15 @@ html::-webkit-scrollbar-thumb {
     @apply h-[80%] max-lg:hidden;
 }
 
-.cart_icon {
+.nav_ic {
     @apply relative;
 }
 
-.cart_icon i {
+.nav_ic i {
     @apply hover:text-primary-100 cursor-pointer;
 }
 
-.cart_icon span {
-    @apply absolute top-[-11px] right-[-11px] text-xs text-white bg-secondary-300 size-5 flex justify-center items-center rounded-full;
-}
-
-.wishlist_icon {
-    @apply relative;
-}
-
-.wishlist_icon i {
-    @apply hover:text-primary-100 cursor-pointer;
-}
-
-.wishlist_icon span {
+.nav_ic span {
     @apply absolute top-[-11px] right-[-11px] text-xs text-white bg-secondary-300 size-5 flex justify-center items-center rounded-full;
 }
 
