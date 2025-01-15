@@ -468,7 +468,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .items_five {
-    @apply grid grid-cols-5 max-[1120px]:grid-rows-2 justify-between items-start gap-16 h-fit w-full;
+    @apply grid grid-cols-5 max-[1120px]:grid-cols-1 justify-between items-start gap-16 h-fit w-full;
 }
 
 .items_five .left_content {

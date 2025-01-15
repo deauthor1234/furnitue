@@ -2695,7 +2695,7 @@ html::-webkit-scrollbar-thumb{
 
 @media (max-width: 1120px){
   .items_five{
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
@@ -3385,11 +3385,6 @@ html::-webkit-scrollbar-thumb{
 
   .max-\[425px\]\:ml-6{
     margin-left: 1.5rem;
-  }
-
-  .max-\[425px\]\:size-\[90\%\]{
-    width: 90%;
-    height: 90%;
   }
 
   .max-\[425px\]\:size-\[95\%\]{
