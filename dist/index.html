@@ -123,23 +123,33 @@
                         <li class="nav_link group">
                             <a>CONTACT</a>
                         </li>
+                        <div class="mt-10 hidden max-[425px]:flex justify-center gap-12 text-[1.7rem]">
+                            <div class="wishlist_icon nav_ic">
+                                <i class="bx bx-heart"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="cart_icon nav_ic">
+                                <i class="bx bx-cart-alt"></i>
+                                <span>2</span>
+                            </div>
+                        </div>
                     </ul>
                     <div class="text-[1.4rem] text-black flex gap-6">
-                        <i class="bx bx-search-alt hover:text-primary-100 cursor-pointer"></i>
-                        <div class="wishlist_icon nav_ic">
+                        <i class="bx bx-search-alt hover:text-primary-100 cursor-pointer max-[425px]:hidden"></i>
+                        <div class="wishlist_icon nav_ic max-[425px]:hidden">
                             <i class="bx bx-heart"></i>
                             <span>3</span>
                         </div>
-                        <div class="cart_icon nav_ic">
+                        <div class="cart_icon nav_ic max-[425px]:hidden">
                             <i class="bx bx-cart-alt"></i>
                             <span>2</span>
                         </div>
-                        <i id="menuIcon" class="bx bx-menu hover:text-primary-100 cursor-pointer hidden max-lg:block text-[1.6rem]"></i>
+                        <i id="menuIcon" class="bx bx-menu hover:text-primary-100 cursor-pointer hidden max-lg:block text-[1.6rem] max-[425px]:text-[1.7rem]"></i>
                     </div>
                 </div>
                 <div class="side_bar_overlay"></div>
-                <div class="shopping_cart">
-                    <div class="cart_nav">
+                <div class="shopping_cart header_side_navs">
+                    <div class="header_side_navs_nav">
                         <div class="content">
                             <p class="heading">Shopping Cart</p>
                             <div class="close_icon">
@@ -147,7 +157,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="cart_items">
+                    <div class="nav_items">
                         <div class="cart_item">
                             <div class="image">
                                 <img src="assets/images/premium products/product3.png" alt="">
@@ -177,10 +187,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="check_out_btn"><span>Check Out <i class="bx bx-right-arrow-alt"></i></span></div>
+                    <div class="bottom_btn"><span>Check Out <i class="bx bx-right-arrow-alt"></i></span></div>
                 </div>
-                <div class="wishlist">
-                    <div class="wishlist_nav">
+                <div class="wishlist header_side_navs">
+                    <div class="header_side_navs_nav">
                         <div class="content">
                             <p class="heading">Wishlist</p>
                             <div class="close_icon">
@@ -188,7 +198,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="wishlist_items">
+                    <div class="nav_items">
                         <div class="wishlist_item">
                             <div class="image">
                                 <img class="scale-125" src="assets/images/home furnitures/product2.jpeg" alt="">
@@ -214,7 +224,7 @@
                             <i class="bx bx-trash"></i>
                         </div>
                     </div>
-                    <div class="clear_all_btn"><span>Clear All <i class="bx bx-trash-alt"></i></span></div>
+                    <div class="bottom_btn"><span>Clear All <i class="bx bx-trash-alt"></i></span></div>
                 </div>
             </nav>
             <div id="header_content" class="flex items-center">
