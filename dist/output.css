@@ -3342,6 +3342,10 @@ html::-webkit-scrollbar-thumb{
   .max-\[590px\]\:hidden{
     display: none;
   }
+
+  .max-\[590px\]\:justify-center{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 550px){
